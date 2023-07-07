@@ -1,0 +1,279 @@
+body{
+    background: slategrey;
+}
+.containerflevantamiento {
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    left: 3%;
+    right: auto;
+    margin: -25px 0 0 -25px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 20px 8px 0 rgba(45, 0, 32, 0.2);
+    height: auto;
+    width: 80%;
+    border: 1.5px solid #9D9C9C;
+
+} 
+.unolef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 550px;
+    width: 50%;
+    padding-left: 2%;
+}
+.unoraigh{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 550px;
+    width: 48%;
+    left:  50%;
+    padding-left: 2%;
+}
+.treslef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 700px;
+    width: 48%;
+    padding-left: 2%;
+}
+.tresraigh{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 700px;
+    width: 48%;
+    left: 50%;
+    padding-left: 2%;
+}
+.cuatrolef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 2000px;
+    width: 48%;
+    padding-left: 2%;
+}
+.cuatroraigh{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 2000px;
+    width: 50%;
+    left: 48%;
+    padding-left: 2%;
+}
+.cincocontainer{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 500px;
+    width: 80%;
+    padding-left: 20%;
+}
+.seislef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 1000px;
+    width: 48%;
+    padding-left: 2%;
+}
+.seisrigth{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 1000px;
+    width: 50%;
+    left: 48%;
+    padding-left: 2%;
+}
+.sietelef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 600px;
+    width: 48%;
+    padding-left: 2%;
+}
+.sieteright{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 600px;
+    width: 48%;
+    left: 50%;
+    padding-left: 2%;
+}
+.ochocontainer{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 400px;
+    width: 80%;
+    padding-left: 20%;
+}
+.nuevecontainer{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 400px;
+    width: 80%;
+    padding-left: 20%;
+}
+.diezlef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 2300px;
+    width: 31.5%;
+    padding-left: 2%;
+}
+.diezmid{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 2300px;
+    width: 31.5%;
+    left: 33.33%;
+    padding-left: 2%;
+}
+.diezright{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 2300px;
+    width: 31.5%;
+    left: 66.66%;
+    padding-left: 2%;
+}
+.oncelef{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 500px;
+    width: 31.5%;
+    padding-left: 2%;
+}
+.oncemid{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 500px;
+    width: 31.5%;
+    left: 33.33%;
+    padding-left: 2%;
+}
+.onceright{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 500px;
+    width: 31.40%;
+    left: 66.66%;
+    padding-left: 2%;
+}
+.docecontainer{
+    border-end-end-radius: 5px;
+    position: absolute;
+    background: white;
+    box-shadow: 0 10px 0 0 rgba(45, 0, 32, 0.2);
+    height: 400px;
+    width: 90%;
+    padding-left: 10%;
+}
+
+
+.inputformlev {
+    width: 60%;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: black;
+    background-color: white;
+    border: 1.5px solid gray;
+    border-radius: 10px;
+    outline: none;
+    transition: .3s ease;
+    margin-left: 20%;
+}
+.formulario{
+}
+.TabNav{
+    width: 98%;
+}
+.TabClass{
+    width: 10%;
+    font-size: 15px;
+}
+.labelform{
+    display: block; 
+    width: 80%;
+    font-size: 15px;
+    margin-top: 8px;
+}
+.tnormasanitaria{
+    display: block; 
+    width: 90%;
+    font-size: 16px;
+}
+.treqgen{
+    background: gray;
+    position: relative;
+    color: white;
+    width: 63%;
+    font-size: 16px;
+    height: 25px;
+    top: 5px;
+    padding-left: 37%;
+}
+.tdatgen{
+    background: gray;
+    position: relative;
+    color: white;
+    width: 60%;
+    font-size: 16px;
+    height: 25px;
+    top: 5px;
+    padding-left: 40%;
+}
+.selectfle{
+    margin-top: 10px;
+    padding-top: 1px;
+    border-radius: 5px;
+    width: 80%;
+    height: 30px;
+}
+textarea{
+    margin-top: 10px;
+    padding-top: 1px;
+    border-radius: 4px;
+    height: 40px;
+    width: 80%;
+    resize: none;
+
+}

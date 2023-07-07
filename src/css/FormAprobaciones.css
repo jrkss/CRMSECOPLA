@@ -1,0 +1,12 @@
+body{background: #9BA4B5;}
+.alternaldata{
+    width: 100%;
+    font-size: 40px;
+    background: gray;
+    padding-left: 35%;
+    color: aliceblue;
+}
+
+.button{
+    width: 200px;
+}
