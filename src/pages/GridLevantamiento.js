@@ -167,6 +167,9 @@ function GridLevantamiento(props, { gridLevantamiento }) {
     const mvDicServ = () => {
         props.history.push('/DicServicio');
     }
+    const mvDescargas = () => {
+        props.history.push('/ExampleDoc');
+    }
     useEffect(() => {
         /*peticionGet();
         peticionGetFl();*/
@@ -273,6 +276,10 @@ function GridLevantamiento(props, { gridLevantamiento }) {
                             <Button variant="text" startIcon={<AdsClickIcon />} onClick={() => mvDicServ()} sx={{ margin: '5px', color: "gray", borderColor: 'black' }}>
                                 DISEÑO
                             </Button>
+                            <Button variant="text" startIcon={<AdsClickIcon />} onClick={() => mvDescargas()} sx={{ margin: '5px', color: "gray", borderColor: 'black' }}>
+                                DESCARGAS
+                            </Button>
+
 
                         </Box>
                     </Toolbar>

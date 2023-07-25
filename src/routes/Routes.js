@@ -11,6 +11,7 @@ import FormDicServ from '../pages/FormDicServ';
 import Aprobaciones from '../pages/Aprobaciones';
 import FormAprobaciones from '../pages/FormAprobaciones';
 import ReportTemplate from '../pages/Template/ReportTemplate';
+import ExampleDoc from '../pages/ExampleDoc';
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/Aprobaciones" component={Aprobaciones}/>
         <Route exact path={"/FormAprobaciones/:partida"} component={FormAprobaciones}/>
         <Route exact path={"/ReportTemplate/:planta"} component={ReportTemplate}/>
+        <Route exact path={"/ExampleDoc"} component={ExampleDoc}/>
 
 
       </Switch>

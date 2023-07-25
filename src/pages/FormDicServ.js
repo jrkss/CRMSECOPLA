@@ -44,15 +44,21 @@ function FormDicServ(props) {
     const [servtrampdisp, setServTrampDisp] = useState([]);
     const [frecuencia, setFrecuencia] = useState([]);
     const [selectedOptions, setSelectedOptions] = useState([]);
+    const [val, setVal] = useState({})
 
-    
-const handleApliacionesChange = (e, index) => {
-    const { name, value } = e.target;
-    const list = [...serviceList];
-    list[index][name] = value;
+    const handleClick = () => {
+        setVal(servicioArray[0]);//you pass any value from the array of top100Films
+        // set value in TextField from dropdown list
+    };
 
-    setSelectedOptions(list);
-}
+    const handleApliacionesChange = (e, index) => {
+        const { name, value } = e.target;
+        const list = [...serviceList];
+        list[index][name] = value;
+
+        setSelectedOptions(list);
+        console.log(selectedOptions)
+    }
 
 
     const ApiGetData = () => {
@@ -164,6 +170,7 @@ Inputs Dinamics
         const list = [...serviceList];
         list[index][name] = value;
         setServiceList(list);
+        console.log(e)
 
     };
 
@@ -319,6 +326,7 @@ Dinamics Inputs
         console.warn(val)
         setValue(val)
     }
+    const [ContactValue, setContactValue] = useState('')
     const areasProspectoArray = (areasprospecto.map((dat) => (dat.c3)));
 
     const cinturonesArray = (cinturon.map((dat) => (dat.c2)));
@@ -326,6 +334,9 @@ Dinamics Inputs
     const productrnpArray = (productrnp.map((dat) => (dat.c2)));
     const frecuenciaArray = (frecuencia.map((dat) => (dat.c2)));
     const servtrampdispArray = (servtrampdisp.map((dat) => (dat.c2)));
+    const handleChange = (event) => {
+        setContactValue(event.target.value);
+    };
 
 
 
@@ -368,7 +379,7 @@ Dinamics Inputs
                 onSubmit={(valores) => {
 
                     console.log(serviceList)
-                    /*
+                   
                                         const urltabone = 'http://192.168.1.47:5000/api/proecotabone';
                                         const urltabtwo = 'http://192.168.1.47:5000/api/proecotabtwo';
                                         const urltabthree = 'http://192.168.1.47:5000/api/proecotabthree';
@@ -479,7 +490,7 @@ Dinamics Inputs
                                         } catch (error) {
                                             console.log(error)
                                         }
-                    */
+                   
                 }
                 }
             >
@@ -708,21 +719,34 @@ Dinamics Inputs
                                                         <div key={index} className="services">
 
                                                             <div className="datagridone">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-standard"
+                                                                    name="pe_taba_apli"
+                                                                    label="Agregar Aplicacion"
+                                                                    variant="standard"
+                                                                    value={singleService.pe_taba_apli}
+                                                                    onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
+                                                                    required>
+                                                                    {servicio.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c1}>{dat.c2}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     options={servicioArray}
                                                                     className="inputformdise"
-                                                                    name="pe_taba_apli"
                                                                     type="text"
+                                                                    name="pe_taba_apli"
                                                                     id="pe_taba_apli"
                                                                     sx={{ width: 250 }}
-                                                                    value={singleService.pe_taba_apli}
-                                                                    onChange={(e) => {handleApliacionesChange(e, index);handleChange(e)}}
-                                                                    required 
-                                                                    renderInput={(params) => <TextField {...params}
-                                                                    
-                                                                    label="Agregar Aplicacion" />}
-                                                                />
+                                                                    value={val}
+                                                                    handleChange
+                                                                    onChange={(e) => {{handleServiceChange(e, index)};handleChange(e)}}
+                                                                    renderInput={(params) => 
+                                                                    <TextField {...params}
+                                                                        label="Agregar Aplicacion" />}
+                                                                    />*/}
                                                                 {/*<TextField sx={{ fontSize: "5px" }}
                                                                     className="inputformdise"
                                                                     name="pe_taba_apli"
@@ -734,7 +758,21 @@ Dinamics Inputs
                                                                     required />*/}
                                                             </div>
                                                             <div className="datagridtwo">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-standard"
+                                                                    name="pe_taba_prod"
+                                                                    variant="standard"
+                                                                    label="Agregar Productos"
+                                                                    value={singleService.pe_taba_prod}
+                                                                    onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
+                                                                    required
+                                                                >
+                                                                    {productrnp.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c1}>{dat.c2}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     id="combo-box-demo"
                                                                     options={productrnpArray}
@@ -743,7 +781,7 @@ Dinamics Inputs
                                                                     onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
                                                                     required
                                                                     renderInput={(params) => <TextField {...params} label="Agregar Productos" />}
-                                                                />
+                                                                />*/}
                                                                 {/*<TextField className="inputformdise"
                                                                     name="pe_taba_prod"
                                                                     type="text"
@@ -763,7 +801,20 @@ Dinamics Inputs
                                                                     required />
                                                             </div>
                                                             <div className="datagridfour">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-filled"
+                                                                    name="pe_taba_area"
+                                                                    variant="standard"
+                                                                    label="Agregar Area"
+                                                                    value={singleService.pe_taba_area}
+                                                                    onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
+                                                                    required>
+                                                                    {areasprospecto.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c3}>{dat.c3}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     id="combo-box-demo"
                                                                     options={areasProspectoArray}
@@ -772,7 +823,7 @@ Dinamics Inputs
                                                                     onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
                                                                     required
                                                                     renderInput={(params) => <TextField {...params} label="Agregar Area" />}
-                                                                />
+                                                            />*/}
                                                                 {/*<TextField sx={{ width: "80%", marginTop: "10px" }}
                                                                     className="inputformdise"
                                                                     name="pe_taba_area"
@@ -785,7 +836,22 @@ Dinamics Inputs
                                                                 */}
                                                             </div>
                                                             <div className="datagridfive">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-filled"
+                                                                    name="pe_taba_tipofrec"
+                                                                    variant="standard"
+                                                                    label="Agregar Area"
+                                                                    value={singleService.pe_taba_tipofrec}
+                                                                    onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
+                                                                    required
+                                                                >
+                                                                    {frecuencia.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c3}>{dat.c3}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     id="combo-box-demo"
                                                                     options={frecuenciaArray}
@@ -794,7 +860,7 @@ Dinamics Inputs
                                                                     onChange={(e) => { handleServiceChange(e, index); handleChange(e) }}
                                                                     required
                                                                     renderInput={(params) => <TextField {...params} label="Tipo Frecuencia" />}
-                                                                />
+                                                                />*/}
                                                                 {/*<TextField className="inputformdise"
                                                                     name="pe_taba_tipofrec"
                                                                     type="text"
@@ -894,7 +960,20 @@ Dinamics Inputs
                                                         <div key={indexe} className="services">
 
                                                             <div className="datagridBone">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-filled"
+                                                                    name="pe_tabb_equip"
+                                                                    variant="standard"
+                                                                    label="Agregar Equipo"
+                                                                    value={singleEquipo.pe_tabb_equip}
+                                                                    onChange={(e) => { handleEquipoChange(e, indexe); handleChange(e) }}
+                                                                    required>
+                                                                    {servtrampdisp.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c2}>{dat.c2}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     id="combo-box-demo"
                                                                     options={servtrampdispArray}
@@ -903,7 +982,7 @@ Dinamics Inputs
                                                                     onChange={(e) => { handleEquipoChange(e, indexe); handleChange(e) }}
                                                                     required
                                                                     renderInput={(params) => <TextField {...params} label="Agregar Equipo" />}
-                                                                />
+                                                                />*/}
                                                                 {/*<TextField className="inputformdise"
                                                                     name="pe_tabb_equip"
                                                                     type="text"
@@ -933,7 +1012,20 @@ Dinamics Inputs
                                                                     required />
                                                             </div>
                                                             <div className="datagridBfour">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-filled"
+                                                                    name="pe_tabb_cinturon"
+                                                                    variant="standard"
+                                                                    label="Agregar Cinturon"
+                                                                    value={singleEquipo.pe_tabb_cinturon}
+                                                                    onChange={(e) => { handleEquipoChange(e, indexe); handleChange(e) }}
+                                                                    required>
+                                                                    {cinturon.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c2}>{dat.c2}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     id="combo-box-demo"
                                                                     options={cinturonesArray}
@@ -942,7 +1034,7 @@ Dinamics Inputs
                                                                     onChange={(e) => { handleEquipoChange(e, indexe); handleChange(e) }}
                                                                     required
                                                                     renderInput={(params) => <TextField {...params} label="Movie" />}
-                                                                />
+                                                                />*/}
                                                                 {/*<TextField className="inputformdise"
                                                                     name="pe_tabb_cinturon"
                                                                     type="text"
@@ -953,7 +1045,21 @@ Dinamics Inputs
                                                     required />*/}
                                                             </div>
                                                             <div className="datagridBfive">
-                                                                <Autocomplete
+                                                                <Select
+                                                                    sx={{ width: 200, height: 50 }}
+                                                                    id="demo-simple-select-filled"
+                                                                    name="pe_tabb_tipofrec"
+                                                                    variant="standard"
+                                                                    label="Tipo Frecuencia"
+                                                                    value={singleEquipo.pe_tabb_tipofrec}
+                                                                    onChange={(e) => { handleEquipoChange(e, indexe); handleChange(e) }}
+                                                                    required
+                                                                    >
+                                                                    {frecuencia.map((dat) => (
+                                                                        <MenuItem key={dat.c1} value={dat.c2}>{dat.c2}</MenuItem>
+                                                                    ))}
+                                                                </Select>
+                                                                {/*<Autocomplete
                                                                     disablePortal
                                                                     id="combo-box-demo"
                                                                     options={frecuenciaArray}
@@ -962,7 +1068,7 @@ Dinamics Inputs
                                                                     onChange={(e) => { handleEquipoChange(e, indexe); handleChange(e) }}
                                                                     required
                                                                     renderInput={(params) => <TextField {...params} label="Tipo Frecuencia" />}
-                                                                />
+                                                                />*/}
                                                                 {/*<TextField className="inputformdise"
                                                                     name="pe_tabb_tipofrec"
                                                                     type="text"

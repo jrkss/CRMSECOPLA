@@ -77,6 +77,9 @@ function Menu(props) {
     const mvAprobaciones = () => {
         props.history.push('/Aprobaciones');
     }
+    const mvDescargas = () => {
+        props.history.push('/ExampleDoc');
+    }
 
     const cerrarSesion = () => {
         cookies.remove('id', { path: '/' });
@@ -131,6 +134,9 @@ function Menu(props) {
                         </Button>
                         <Button variant="text" startIcon={<AdsClickIcon />} sx={{ margin:'5px',color: "#394867",marginRigth: '10px', borderColor: '#fff' }}>
                             DISEÑO
+                        </Button>
+                        <Button variant="text" startIcon={<AdsClickIcon />} onClick={() => mvDescargas()} sx={{ margin:'5px',color: "#394867",marginRigth: '10px', borderColor: '#fff' }}>
+                            DESCARGAS
                         </Button>
                         
                     </Box>

@@ -196,7 +196,7 @@ function FormAprobaciones(props) {
                     }
                     if (valores.apro_estatus === 'Aprobado') {
                         console.log("Hola Mundo")
-                        /*const insertaApro = axios.put(urlAprobaciones, dataApro).then(res => {
+                        const insertaApro = axios.put(urlAprobaciones, dataApro).then(res => {
                             console.log(res.status);
                             MySwal.fire({
                                 icon: 'success',
@@ -204,26 +204,26 @@ function FormAprobaciones(props) {
                                 showConfirmButton: false,
                                 timer: 2000
                             })
-                        })*/
+                        })
                         var datos = data.planta
                         var index = dataProEco.findIndex(item => item.planta === datos);
                         console.log(index)
                         if (index === -1) {
                             console.log("index of")
-                            /* const insercionapro = axios.post(urlProEco, dataproecoi).then(res => {
+                            const insercionapro = axios.post(urlProEco, dataproecoi).then(res => {
                                  console.log(res.status + "Data")
-                             });*/
+                             });
                         } else {
                             console.log("Si hay datos")
-                            /*var validate = dataProEco[index].planta
-                            console.log(validate)*/
+                            var validate = dataProEco[index].planta
+                            console.log(validate)
                         }
-                        //mvgridapro();
+                        mvgridapro();
                     } else {
-                        /* const insertaApro = axios.put(urlAprobaciones, dataApro).then(res => {
+                         const insertaApro = axios.put(urlAprobaciones, dataApro).then(res => {
                              console.log(res.status);
                          })
-                         mvgridapro();*/
+                         mvgridapro();
                     }
                     /*
                     
