@@ -1,0 +1,558 @@
+.containerflevantamiento {
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 3%;
+    right: auto;
+    margin: -25px 0 0 -25px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 20px 8px 0 rgba(45, 0, 32, 0.2);
+    height: auto;
+    width: 90%;
+    border: 1.5px solid #9D9C9C;
+}
+.equiposasigcon{
+    position: relative;
+    background: white;
+    box-shadow: 0 20px 8px 0 rgba(45, 0, 32, 0.2);
+    height: 55px;
+    width: 100%;
+    border: 1.5px solid #9D9C9C;
+}
+.part1{
+    font-size: 20px;
+    position: absolute;
+    width: 35%;
+    height: 50px;
+    padding-left: 5%;
+    padding-top:8px;
+    border: 1.5px solid #9D9C9C;
+}
+.part1b{
+    position: absolute;
+    width: 35%;
+    left: 35%;
+    height: 50px;
+    border: 1.5px solid #9D9C9C;
+    font-size: 15px;
+    padding-left: 10%;
+}
+.part1c{
+    position: absolute;
+    width: 30%;
+    left: 70%;
+    height: 50px;
+    border: 1.5px solid #9D9C9C;
+    font-size: 15px;
+}
+.entregacarp{
+    position: relative;
+    background: white;
+    box-shadow: 0 20px 8px 0 rgba(45, 0, 32, 0.2);
+    height: 65px;
+    width: 100%;
+    border: 1.5px solid #9D9C9C;
+}
+.part2{
+    font-size: 20px;
+    position: absolute;
+    width: 35%;
+    height: 50px;
+    padding-left: 5%;
+    padding-top:8px;
+    border: 1.5px solid #9D9C9C;
+}
+.part2b{
+    position: absolute;
+    width: 35%;
+    left: 35%;
+    height: 50px;
+    border: 1.5px solid #9D9C9C;
+    font-size: 15px;
+    padding-left: 10%;
+}
+.part2c{
+    position: absolute;
+    width: 30%;
+    left: 70%;
+    height: 50px;
+    border: 1.5px solid #9D9C9C;
+    font-size: 15px;
+}
+.tecnicofdise{
+    position: relative;
+    background: white;
+    box-shadow: 0 20px 8px 0 rgba(45, 0, 32, 0.2);
+    height: 75px;
+    width: 100%;
+    border: 1.5px solid #9D9C9C;
+}
+.part3{
+    font-size: 20px;
+    position: absolute;
+    width: 35%;
+    height: 70px;
+    padding-left: 5%;
+    padding-top:8px;
+    border: 1.5px solid #9D9C9C;
+}
+.part3b{
+    position: absolute;
+    width: 35%;
+    left: 35%;
+    height: 70px;
+    border: 1.5px solid #9D9C9C;
+    font-size: 15px;
+    padding-left: 10%;
+}
+.part3c{
+    position: absolute;
+    width: 30%;
+    left: 70%;
+    height: 70px;
+    border: 1.5px solid #9D9C9C;
+    font-size: 15px;
+}
+
+
+
+.apliequiforms{
+    position: relative;
+    background: white;
+    box-shadow: 0 20px 8px 0 rgba(45, 0, 32, 0.2);
+    height: 117px;
+    width: 100%;
+    border: 1.5px solid #9D9C9C;
+}
+.formtdata{
+    position: relative;
+    background: white;
+    height: 50px;
+    width: 100%;
+    border: 1.5px solid #9D9C9C;
+    font-size: 20px;
+}
+.formtdataae{
+    position: relative;
+    background: white;
+    height: 50px;
+    width: 83.5%;
+    border: 1.5px solid #9D9C9C;
+    font-size: 20px;
+}
+.titleapli{
+    position: absolute;
+    width: 50%;
+    color: white;
+    background: #9D9C9C;
+    border: 1.5px solid #9D9C9C;
+    padding-left: 20%;
+    padding-top: 5px;
+    height: 50px;
+}
+.titleequi{
+    position: relative;
+    width: 50%;
+    left: 50%;  
+    color: white;
+    background: #9D9C9C;
+    border: 1.5px solid #9D9C9C;
+    padding-left: 20%;
+    right: auto;
+    padding-top: 5px;
+    height: 50px;
+}
+
+.formdata{
+    position: absolute;
+    width: 50%;
+    border: 1.5px solid #9D9C9C;
+    padding-left: 16%;
+    padding-top: 5px;
+    height: 65px;
+}
+.formdataprodd{
+    position: relative;
+    width: 50%;
+    left: 50%;  
+    border: 1.5px solid #9D9C9C;
+    padding-left: 16%;
+    right: auto;
+    padding-top: 5px;
+    height: 65px;
+}
+.formservadic{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background: #9D9C9C;;
+}
+.titleseradic{
+    position: absolute;
+    width: 100%;
+    left: 17%;
+    padding-left: 20%;
+    right: auto;
+}
+.formservadicdata{
+    position: relative;
+    width: 100%;
+    border: 1.5px solid #9D9C9C;
+    padding-left: 39%;
+    padding-top: 5px;
+    height: 65px;
+}
+.tabone{
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    height: 50px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.tabtwo{
+    font-size: 18px;
+    position: absolute;
+    left: 13.5%;
+    width: 14.5%;
+    padding-left: 4%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabthree{
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 28%;
+    padding-left: 2%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabfour{
+    font-size: 18px;
+    position: absolute;
+    width: 14.1%;
+    left: 41.5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabfive{
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    left: 55.6%;
+    padding-left: 1%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabsix{
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    padding-left: 1%;
+    padding-top: 1%;
+    left: 69.4%;
+    height: 50px;
+}
+.tabseven{
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    left: 83.2%;
+    padding-left: 2.5%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabeight{
+    font-size: 18px;
+    position: absolute;
+    background: gray;
+    width: 3%;
+    left: 97%;
+    height: 50px;
+}
+.datagridone{
+    display: flex;
+    font-size: 14px;
+    position: absolute;
+    width: 13.5%;
+    height: auto;
+}
+.datagridtwo{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    left: 15.5%;
+    width: 14%;
+    height: auto;
+    padding-left: 1.5%;
+}
+.datagridthree{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 28%;
+    height: auto;
+    
+    padding-left: 1%;
+}
+.datagridfour{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 41.8%;
+    height: auto;
+}
+.datagridfive{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 55.6%;
+    height: auto;
+}
+.datagridsix{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 69.4%;
+    height: auto;
+}
+.datagridseven{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    left: 83.2%;
+    height: auto;
+}
+.datagrideight{
+    position: relative;
+    display: flex;
+    left: 97%;
+    width: 3%;
+    padding: 5px 5px;
+}
+.add-btn{
+    display: table-column;
+    width: 100%;
+    top: 20px;
+    margin-top: 100px;
+    bottom: 20px;
+}
+.tabBone{
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    height: 50px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.tabBtwo{
+    font-size: 18px;
+    position: absolute;
+    left: 13.5%;
+    width: 14.5%;
+    padding-left: 4%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabBthree{
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 28%;
+    padding-left: 2%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabBfour{
+    font-size: 18px;
+    position: absolute;
+    width: 14.1%;
+    left: 41.5%;
+    padding-left: 5%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabBfive{
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    left: 55.6%;
+    padding-left: 1%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabBsix{
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    padding-left: 1%;
+    padding-top: 1%;
+    left: 69.4%;
+    height: 50px;
+}
+.tabBseven{
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    left: 83.2%;
+    padding-left: 2.5%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabBeight{
+    font-size: 18px;
+    position: absolute;
+    background: gray;
+    width: 3%;
+    left: 97%;
+    height: 50px;
+}
+.datagridBone{
+    display: flex;
+    font-size: 14px;
+    position: absolute;
+    width: 13.5%;
+    height: auto;
+}
+.datagridBtwo{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    left: 13.5%;
+    width: 14%;
+    height: auto;
+    padding-left: 1.5%;
+}
+.datagridBthree{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 28%;
+    height: auto;
+    
+    padding-left: 1%;
+}
+.datagridBfour{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 41.8%;
+    height: auto;
+}
+.datagridBfive{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 55.6%;
+    height: auto;
+}
+.datagridBsix{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.5%;
+    left: 69.4%;
+    height: auto;
+}
+.datagridBseven{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 13.8%;
+    left: 83.2%;
+    height: auto;
+}
+.datagridBeight{
+    position: relative;
+    display: flex;
+    left: 97%;
+    width: 3%;
+    padding: 5px 5px;
+}
+.add-btnOne{
+    display: table-column;
+    width: 100%;
+    top: 40px;
+    margin-top: 100px;
+    bottom: 20px;
+}
+.add-btnTwo{
+    display: table-column;
+    width: 100%;
+    top: 50px;
+    margin-top: 100px;
+    bottom: 20px;
+}
+.tabCone{
+    font-size: 18px;
+    position: absolute;
+    width: 33.33%;
+    height: 50px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.tabCtwo{
+    font-size: 18px;
+    position: absolute;
+    left: 33.33%;
+    width: 33.33%;
+    padding-left: 4%;
+    padding-top: 1%;
+    height: 50px;
+}
+.tabCthree{
+    font-size: 18px;
+    position: absolute;
+    width: 33.33%;
+    left: 66.66%;
+    padding-left: 2%;
+    padding-top: 1%;
+    height: 50px;
+}
+.datagridCone{
+    display: flex;
+    font-size: 14px;
+    left: 5%;
+    position: absolute;
+    width: 32.33%;
+    height: auto;
+}
+.datagridCtwo{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    left: 36.33%;
+    width: 32.33%;
+    height: auto;
+    padding-left: 1.5%;
+}
+.datagridCthree{
+    display: flex;
+    font-size: 18px;
+    position: absolute;
+    width: 32.33%;
+    left: 66.66%;
+    height: auto;
+    
+    padding-left: 1%;
+}
+.datagridCfour{
+    position: relative;
+    display: flex;
+    left: 90%;
+    width: 5%;
+    padding: 5px 5px;
+}
+
