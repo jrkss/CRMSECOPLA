@@ -1,3 +1,15 @@
+Para poder revisar el proyecto es necesirio en package json agregar el siguiente comando 
+ },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  }
+
+##  npm install --legacy-peer-deps 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
